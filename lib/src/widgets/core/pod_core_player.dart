@@ -13,7 +13,7 @@ class _PodCoreVideoPlayer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final podCtr = Get.find<PodGetXVideoController>(tag: tag);
+    final podCtr = Get.put(PodGetXVideoController(), permanent: true, tag: tag);
     return Builder(
       builder: (ctrx) {
         return RawKeyboardListener(
