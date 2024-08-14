@@ -120,6 +120,8 @@ class PodGetXVideoController extends _PodGesturesController {
           qualityList: podPlayerConfig.videoQualityPriority,
           videoUrls: urls,
         );
+        print('URLS $urls');
+        print('URL $url');
 
         ///
         _videoCtr = VideoPlayerController.networkUrl(
